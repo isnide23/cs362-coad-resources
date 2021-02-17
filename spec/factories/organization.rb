@@ -1,8 +1,5 @@
 FactoryBot.define do
-
-    factory :resource_category do
+    factory :organization do
         name { 'Fake' }
     end
-
-
 end

@@ -1,6 +1,9 @@
 FactoryBot.define do
     factory :user do
-        name: {'Fake Descriptor'}
+        email { 'fake@example.com' }
+        role { 'organization' }
+        organization
+        encrypted_password { 'FAKE' }
     end
 
 end
