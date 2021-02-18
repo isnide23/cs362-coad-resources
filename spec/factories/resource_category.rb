@@ -1,7 +1,7 @@
 FactoryBot.define do
 
     factory :resource_category do
-        name { 'Fake' }
+        sequence(:name) { |i| "Fake Name #{i}" }
     end
 
 

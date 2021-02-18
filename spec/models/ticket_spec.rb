@@ -11,8 +11,8 @@ RSpec.describe Ticket, type: :model do
             end
 
             it 'does not include non-closed tickets' do
-                closed_ticket = create(:tickets, closed_ticket)
-                open_ticket = create(:tickets, :open)
+                closed_ticket = create(:ticket, :closed)
+                open_ticket = create(:ticket, :open)
                 expect(Ticket.closed).to_not include(open_ticket)
             end
         end
