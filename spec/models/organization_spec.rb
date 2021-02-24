@@ -6,5 +6,7 @@ RSpec.describe Organization, type: :model do
         Organization.new
     end
 
+    
+
 
 end

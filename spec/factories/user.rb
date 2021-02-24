@@ -3,7 +3,10 @@ FactoryBot.define do
         email { 'fake@example.com' }
         role { 'organization' }
         organization
-        encrypted_password { 'FAKE' }
+        password { 'FAKEPASSWORD' }
+        trait :admin do
+           role { 'admin' } 
+        end
     end
 
 end
