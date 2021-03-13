@@ -5,12 +5,12 @@ FactoryBot.define do
         password { 'fakepassword' }
         password_confirmation { 'fakepassword' }
 
-        trait :admin do
+        trait 'org_role' do
             organization
             role { 'organization' } 
         end
 
-        trait :admin do
+        trait 'admin_role' do
             role { 'admin' } 
         end
     end
